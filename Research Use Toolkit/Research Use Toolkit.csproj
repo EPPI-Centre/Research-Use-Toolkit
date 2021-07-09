@@ -37,5 +37,8 @@
     <Content Include="Assets\Style.css" />
     <Content Include="Index.html" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
