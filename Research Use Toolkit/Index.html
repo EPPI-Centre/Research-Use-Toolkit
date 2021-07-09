@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Decision-makers' Research Use Toolkit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Assets/Main.js"></script>
+    <link rel="stylesheet" type="text/css" href="Assets/Style.css" />
+</head>
+<body>
+    <p id="descr1_1">
+        Question 1.1: this is my first description...
+    </p>
+    <input type="text" id="input1_1" onblur="LocalSave('1_1')" />
+    <p id="descr1_2">
+        Question 1.2: second description!!
+    </p>
+    <input type="text" id="input1_2" onblur="LocalSave('1_2')" />
+    <p id="descr1_3">
+        Question 1.3: third description, but this time, we have some <strong>formatted text in elements</strong>, to check what sort of text we get...
+    </p>
+    <select id="input1_3"  onblur="LocalSave('1_3')">
+        <option value="This is the best option and the first one!">This is the best option and the first one!</option>
+        <option value="This is the 2nd option">This is the 2nd option</option>
+        <option value="This is the 3nd option">This is the 3nd option</option>
+    </select>
+
+
+
+    <div class="w100">
+        <button onclick="Report()">Report</button>
+        <button onclick="Export()">Export</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿body
+{
+}
+.w100 {
+    width: 100%;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding:0.1rem;
+}
