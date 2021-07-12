@@ -1,9 +1,151 @@
-﻿body
-{
+﻿body {
+    font-family: Montserrat;
+    line-height: 1.5;
+    font-size: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
-.w100 {
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: blueviolet;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+}
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: blueviolet;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+}
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: blueviolet;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+}
+p {
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+}
+ol {
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+}
+ul {
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+}
+
+.w-100 {
     width: 100%;
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
-    padding:0.1rem;
+    padding: 0.1rem;
+}
+.w-75 {
+    width: 75%;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding: 0.1rem;
+}
+.large {
+    font-size:1.25em;
+}
+/*ul.large li {
+    font-size: 1.55em;
+}
+ol.large li {
+    font-size: 1.55em;
+}*/
+.small {
+    font-size:0.75em;
+}
+div.row {
+    display:inline;
+}
+.section {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid dodgerblue;
+}
+div.links {
+    float: right;
+    border-style: solid;
+    border-width: 1px;
+    border-color: dodgerblue;
+    border-radius: 10px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 13px;
+    margin-left: 1.5em;
+}
+div.linkshead {
+    font-weight:bold;
+    font-size:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-display: block;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUQjIg1_i6t8kCHKm459WxRyS7j.ttf) format('truetype');
+}
+
+@font-face {
+    font-display: block;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUPjIg1_i6t8kCHKm459WxZcgvz_PZ1.ttf) format('truetype');
+}
+
+@font-face {
+    font-display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf) format('truetype');
+}
+
+@font-face {
+    font-display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+
+@font-face {
+    font-display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
 }

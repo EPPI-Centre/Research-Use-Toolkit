@@ -9,26 +9,312 @@
     <link rel="stylesheet" type="text/css" href="Assets/Style.css" />
 </head>
 <body>
-    <p id="descr1_1">
-        Question 1.1: this is my first description...
-    </p>
-    <input type="text" id="input1_1" onblur="LocalSave('1_1')" />
-    <p id="descr1_2">
-        Question 1.2: second description!!
-    </p>
-    <input type="text" id="input1_2" onblur="LocalSave('1_2')" />
-    <p id="descr1_3">
+    <div class="row">
+        <a href="https://eppi.ioe.ac.uk" target="_blank" style="float:right; margin:5px;">
+            <img src="Assets/EPPI-Centre.png" alt="EPPI Centre logo" style="width: 236px; object-fit: cover;" />
+        </a>
+        <h1>Decision-makers’ Research Use Toolkit</h1>
+    </div>
+
+    <div class="w100" style="vertical-align:top;">
+        <button onclick="GoTo('section0')" class="GoToStart">Start</button>
+        <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>
+        <button onclick="GoToNext()" class="GoToNext">Next</button>
+        <button onclick="GoToLast()" class="GoToLast">Last</button>
+
+        <!--<button onclick="Report()">Report</button>
+        <button onclick="Export()">Export</button>-->
+    </div>
+
+    <div class="section" id="AimsSection">
+        <h2>
+            Aims of the toolkit
+        </h2>
+        <ul class="large">
+            <li>
+                To consider the components of using research evidence (walk through the different components of research use)
+            </li>
+            <li>
+                To provide <span style="color:blue; font-weight:bold;">Links</span> to further resources on specific aspects of these processes
+            </li>
+            <li>
+                To <span style="color:red; font-weight:bold;">Record</span> your progress in following your own strategy of using research
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="section" id="section0">
+        <h2>
+            Stages of developing and monitoring the use of research
+        </h2>
+        <p class="large">
+            <strong>Clarifying:</strong>
+        </p>
+        <ol class="large">
+            <li>
+                The topic / issue (where research may help)
+            </li>
+            <li>
+                The need for research evidence (level of use of research)
+            </li>
+            <li>
+                The type of research evidence
+            </li>
+            <li>
+                Accessing relevant research evidence (as defined by ‘2’)
+            </li>
+            <li>
+                Appraising the research evidence identified
+            </li>
+            <li>
+                Designing a strategy to support the use of research (barriers & facilitators, mechanisms, behavioural change,  & activities)
+            </li>
+            <li>
+                Monitoring the use of research evidence use (progress in developing and following a strategy
+            </li>
+            <li>
+                Evaluating the use of research evidence use (what has been the impact?)
+            </li>
+        </ol>
+    </div>
+
+    <div class="section" id="section1">
+        <h2>
+            1. THE ISSUE (where research might help)
+        </h2>
+        <div class="links">
+            <div class="linkshead">
+                Resources on the use of research evidence:
+            </div>
+            <div id="links1closed" style="display:none;">
+                <button onclick="ToggleById('links1')">Expand</button>
+            </div>
+            <div id="links1">
+                <button onclick="ToggleById('links1')">Close</button>
+                <ul ">
+                    <li>
+                        Link 1
+                    </li>
+                    <li>
+                        Link 2
+                    </li>
+                    <li>
+                        Link 3
+                    </li>
+                    <li>
+                        Link 4
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="large">
+            The topic or issue that you are working on where research evidence might be of benefit to the decision-making process.
+        </p>
+        <p>
+            For example,
+        </p>
+        <ul>
+            <li>
+                Working on a policy development or policy implementation plan that could benefit from the use of evidence.
+            </li>
+            <li>
+                Using research evidence in the development of your personal practice and everyday work
+            </li>
+            <li>
+                The development of organisational structures and procedures that foster the sustained use of research.
+            </li>
+        </ul>
+
+
+        <p id="descr1_1">
+            <strong>1.1 What is the policy or process that you are engaged in?</strong><br />
+            What is the name of the project or task?<br />
+            If none, can you explain the context in which you’d like to support the use of evidence during decision-making. e.g. organisational use of evidence; personal use of evidence?
+        </p>
+        <textarea id="input1_1" onblur="LocalSave('1_1')" cols="90" rows="4"></textarea>
+        <p id="descr1_2">
+            <strong>1.2 What level of decision-making does this refer to?</strong> (eg local, provincial, national)
+        </p>
+        <input type="text" id="input1_2" onblur="LocalSave('1_2')" class="w-75" />
+
+        <p id="descr1_3">
+            Question 1.3: <strong>What sector best describes the context of your work?</strong> (eg education, health)
+        </p>
+        <input type="text" id="input1_3" onblur="LocalSave('1_3')" class="w-75" />
+    </div>
+    <div class="section" id="section1_4">
+        <p>
+            <strong>1.4 Where is this situated in your organisation and your work?</strong>
+        </p>
+        <ul>
+            <li>
+                <div id="descr1_4_1">What are the levels and sequences of decision making (eg your organisations’ formal or informal processes) for this decision?</div>
+                <textarea type="text" class="w-75" id="input1_4_1" onblur="LocalSave('1_4_1')" cols="70" rows="4"></textarea>
+            </li>
+            <li>
+                <div id="descr1_4_2">
+                    Where and how might research evidence be relevant (and not) in these sequences and levels?   Record: maybe a diagram would help?
+                </div>
+                <textarea class="w-75" id="input1_4_2" onblur="LocalSave('1_4_2')" cols="70" rows="4"></textarea>
+            </li>
+            <li>
+                <div id="descr1_4_3">
+                    Locate (within the levels and sequence) and specify the particular decision where research evidence can be used?
+                </div>
+                <textarea class="w-75" id="input1_4_3" onblur="LocalSave('1_4_3')" cols="70" rows="4"></textarea>
+            </li>
+            <li>
+                <div id="descr1_4_4">
+                    Specify any particular contextual issues or constraining factors
+                </div>
+                <textarea class="w-75" id="input1_4_4" onblur="LocalSave('1_4_4')" cols="70" rows="4"></textarea>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section" id="section1_5">
+        <p id="descr1_5">
+            <strong>1.5 At what stage is this work?</strong> <br />
+            If none, can you explain the current use of evidence, e.g. personal novice in using evidence, organisational support for the use of evidence but no structures in place?
+        </p>
+        <textarea class="w-75" id="input1_5" onblur="LocalSave('1_5')" cols="70" rows="4"></textarea>
+
+        <p id="descr1_6">
+            <strong>1.6 What is the timeline and where does research evidence fit into this this?</strong>
+        </p>
+        <textarea class="w-75" id="input1_6" onblur="LocalSave('1_6')" cols="70" rows="4"></textarea>
+
+        <p id="descr1_7">
+            <strong>1.7 What currently influences decision-making? How do you currently prioritise these influences?</strong>
+        </p>
+        <textarea class="w-75" id="input1_7" onblur="LocalSave('1_7')" cols="70" rows="4"></textarea>
+    </div>
+    <div class="section" id="section1_8">
+        <p id="descr1_8">
+            <strong>1.8 What does evidence mean in the context of your organisation/team/ etc?</strong>
+        </p>
+        <textarea class="w-75" id="input1_8" onblur="LocalSave('1_8')" cols="70" rows="4"></textarea>
+
+        <p id="descr1_9">
+            <strong>1.9 How are these different evidence conceptions prioritised and used?</strong>
+        </p>
+        <textarea class="w-75" id="input1_9" onblur="LocalSave('1_9')" cols="70" rows="4"></textarea>
+
+        <p id="descr1_10">
+            <strong>1.10 To what extent has research evidence been used? </strong> Through what methodologies? <br />
+            <span class="small">
+                [Clarify between 'use'- what designs to look for an answer to the problem/issue/research
+                question and generation.]
+            </span>
+        </p>
+        <textarea class="w-75" id="input1_10" onblur="LocalSave('1_10')" cols="70" rows="4"></textarea>
+    </div>
+
+    <!--<p id="descr1_3">
         Question 1.3: third description, but this time, we have some <strong>formatted text in elements</strong>, to check what sort of text we get...
     </p>
-    <select id="input1_3"  onblur="LocalSave('1_3')">
+    <select id="input1_3" onblur="LocalSave('1_3')">
         <option value="This is the best option and the first one!">This is the best option and the first one!</option>
         <option value="This is the 2nd option">This is the 2nd option</option>
         <option value="This is the 3nd option">This is the 3nd option</option>
-    </select>
+    </select>-->
 
 
+    <div id="section2" class="section">
+        <h2>2. THE EVIDENCE NEED  (to assist decision making)</h2>
+        <ul>
+            <li>
+                We know the policy issue, so what type of information will assist you?
+            </li>
+            <li>
+                Why do you want to use research evidence?
+            </li>
+            <li>
+                What type of research would this be, and to what extent do you want to use the research?
+            </li>
+            <li>
+                How will this fit in with other types of information you plan to use?
+            </li>
+        </ul>
+        <p id="descr2_1">
+            <strong>2.1 Motivation / purpose</strong>: Why do you wish to consider evidence to inform your decision-making? <br />
+            Avoid errors, detailed information, engagement, justification, required process, etc?
+        </p>
+        <textarea class="w-75" id="input2_1" onblur="LocalSave('2_1')" cols="70" rows="4"></textarea>
 
-    <div class="w100">
+        <p id="descr2_2">
+            <strong>2.2 Change</strong> How might research evidence make a difference?<br />
+            The policy decision, the effects of that decision, etc?
+        </p>
+        <textarea class="w-75" id="input2_2" onblur="LocalSave('2_2')" cols="70" rows="4"></textarea>
+    </div>
+    <div id="section2_3" class="section">
+        <p>
+            <strong>Who, to what extent, and why?</strong>
+        </p>
+        <p id="descr2_3">
+            <strong>2.3 Who and to what extent?</strong>
+            In relation to the previously described sequence and level of decision making
+        </p>
+        <textarea class="w-75" id="input2_3" onblur="LocalSave('2_3')" cols="70" rows="4"></textarea>
+        <p>Please tick those which may apply:</p>
+        <div class="row">
+            <div id="descr2_3_1">
+                <p>
+                    <strong>To be aware of research.</strong>
+                </p>
+                <div class="small">
+                    Your awareness that particular bodies of research exist and might be relevant to your decision-making needs.<br />
+                    It does not require you to have access to this research or to have read it and merely refers to your awareness of research.
+                </div>
+            </div>
+            <input type="checkbox"  id="input2_3_1" onblur="LocalSave('2_3_1')" />
+        </div>
+        <div class="row">
+            <div id="descr2_3_2">
+                <p>
+                    <strong>To engage with research.</strong>
+                </p>
+                <div class="small">
+                    Accessing individual research studies or bodies of research and understanding their research results and potential implications for decision-making.<br /> 
+                    You might have ideas for how these results could inform actual decisions and practices but there is no tangible efforts to integrate research into these.<br /> 
+                    You might want to be aware of the limitations of the research in terms of method or relevance (including how it has been used in decision making).
+                </div>
+            </div>
+            <input type="checkbox"  id="input2_3_2" onblur="LocalSave('2_3_2')" />
+        </div>
+        <div class="row">
+            <div id="descr2_3_3">
+                <p>
+                    <strong>To integrate research into decision-making processes.</strong>
+                </p>
+                <div class="small">
+                    Tangible efforts to integrate research findings into decision-making processes. <br />
+                    For example: feeding the findings of evaluation studies into policy design; developing professional practice; or setting up systems to foster the continued use of evidence.
+                </div>
+            </div>
+            <input type="checkbox"  id="input2_3_3" onblur="LocalSave('2_3_3')" />
+        </div>    
+        
+        
+
+        
+    </div>
+    <div id="section3" class="section">
+        this is section 3, opened.
+    </div>
+    <div id="section4" class="section">
+        this is section 4, opened.
+    </div>
+
+
+    <div class="w100" style="vertical-align:bottom;">
+        <button onclick="GoTo('section0')" class="GoToStart">Start</button>
+        <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>
+        <button onclick="GoToNext()" class="GoToNext">Next</button>
+        <button onclick="GoToLast()" class="GoToLast">Last</button>
+
         <button onclick="Report()">Report</button>
         <button onclick="Export()">Export</button>
     </div>
