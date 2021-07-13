@@ -1,9 +1,12 @@
 ﻿const QuestionsList = ["1_1", "1_2", "1_3"
     , "1_4_1", "1_4_2", "1_4_3", "1_4_4", "1_5", "1_6", "1_7", "1_8", "1_9", "1_10"
     , "2_1", "2_2", "2_3_1", "2_3_2", "2_3_3", "2_4"
+    , "3_1_1", "3_1_2", "3_1_3", "3_1_4", "3_2", "3_3"
+    , "4_1"
 ];
 const CheckBoxes = [
     "2_3_1", "2_3_2", "2_3_3"
+    , "4_2_1", "4_2_2", "4_2_3", "4_2_4", "4_2_5", "4_2_6", "4_2_7", "4_2_8", "4_2_9"
 ];
 const Sections = [
     "section0"
@@ -15,7 +18,11 @@ const Sections = [
     , "section2_3"
     , "section2_4"
     , "section3"
+    , "section3_1"
+    , "section3_2"
     , "section4"
+    , "section4_2"
+    , "section5"
 ]
 let CurrentSection = "section0";//last bit needs to be an integer
 $(document).ready(

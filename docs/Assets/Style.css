@@ -58,6 +58,12 @@ ul {
     margin-bottom: 0.1rem;
     padding: 0.1rem;
 }
+.w-50 {
+    width: 50%;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding: 0.1rem;
+}
 .large {
     font-size:1.25em;
 }
@@ -90,6 +96,7 @@ div.links {
     padding-left: 1em;
     font-size: 13px;
     margin-left: 1.5em;
+    max-width:40%;
 }
 div.linkshead {
     font-weight:bold;
