@@ -35,7 +35,7 @@
   <ItemGroup>
     <Content Include="Assets\Main.js" />
     <Content Include="Assets\Style.css" />
-    <Content Include="Index.html" />
+    <Content Include="Survey.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.md" />
