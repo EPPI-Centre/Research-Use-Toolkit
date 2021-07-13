@@ -13,6 +13,7 @@ const Sections = [
     , "section1_8"
     , "section2"
     , "section2_3"
+    , "section2_4"
     , "section3"
     , "section4"
 ]
