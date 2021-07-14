@@ -67,14 +67,12 @@ ul {
 .large {
     font-size:1.25em;
 }
-/*ul.large li {
-    font-size: 1.55em;
-}
-ol.large li {
-    font-size: 1.55em;
-}*/
+
 .small {
-    font-size:0.75em;
+    font-size: 0.90em;
+}
+.smaller {
+    font-size: 0.75em;
 }
 div.row {
     display:inline;
@@ -101,6 +99,24 @@ div.links {
 div.linkshead {
     font-weight:bold;
     font-size:1rem;
+}
+thead {
+    border:1px solid black;
+    background-color: #979797
+}
+th {
+    border: 1px solid black;
+}
+td {
+    border: 1px solid black;
+    padding: 0.2em 0.8em 0.2em 0.8em;
+}
+
+tr {
+    background-color: #e0e0e0;
+}
+tr.evenRow {
+    background-color: #f2f2f2;
 }
 
 
