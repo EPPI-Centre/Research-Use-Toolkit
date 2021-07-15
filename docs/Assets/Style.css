@@ -102,7 +102,8 @@ div.links {
     padding-left: 1em;
     font-size: 13px;
     margin-left: 1.5em;
-    max-width:40%;
+    max-width: 40%;
+    background-color: whitesmoke;
 }
 div.linkshead {
     font-weight:bold;
@@ -137,6 +138,13 @@ img.inner {
 }
 img.max {
     width: 90% !important;
+}
+.actionButtons {
+    display: inline;
+    padding: 0.4em;
+    border: 1px solid dodgerblue;
+    margin: 0.5em 0.2em 0.5em auto;
+    border-radius: 6px;
 }
 
 

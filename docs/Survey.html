@@ -16,31 +16,25 @@
         <h1>Decision-makers’ Research Use Toolkit</h1>
     </div>
 
-    <div class="w100" style="vertical-align:top;">
-        <button onclick="GoTo('section0')" class="GoToStart">Start</button>
-        <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>
-        <button onclick="GoToNext()" class="GoToNext">Next</button>
-        <button onclick="GoToLast()" class="GoToLast">Last</button>
-
-        <!--<button onclick="Report()">Report</button>
-        <button onclick="Export()">Export</button>-->
+    <div class="w-100">
+        <div class="actionButtons">
+            <label>Navigate:</label>
+            <button onclick="GoTo('section0')" class="GoToStart">Start</button>
+            <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>
+            <button onclick="GoToNext()" class="GoToNext">Next</button>
+            <button onclick="GoToLast()" class="GoToLast">Last</button>
+        </div>
     </div>
 
     <div class="section" id="AimsSection">
         <h2>
-            Aims of the toolkit <span class="small" style="color:red; font-weight:bold">[This is WORK in progress!]</span>
+            <span class="small" style="color:red; font-weight:bold">[This is WORK in progress!]</span>
         </h2>
-        <ul class="large">
-            <li>
-                To consider the components of using research evidence (walk through the different components of research use)
-            </li>
-            <li>
-                To provide <span style="color:blue; font-weight:bold;">Links</span> to further resources on specific aspects of these processes
-            </li>
-            <li>
-                To <span style="color:red; font-weight:bold;">Record</span> your progress in following your own strategy of using research
-            </li>
-        </ul>
+        <p class="large">
+            <em>
+                This toolkit is designed to help consider and review your strategy for making use of research evidence, with links to relevant resources.
+            </em>
+        </p>
     </div>
 
 
@@ -1050,7 +1044,7 @@
         </p>
         <textarea class="w-75" id="input8_2" onblur="LocalSave('8_2')" cols="80" rows="4"></textarea>
     </div>
-    
+
     <div id="section8_3" class="section">
         <h3>8.3 Evaluation activities </h3>
         <div style="float: right;">
@@ -1084,14 +1078,26 @@
             <li>Optionally, return here, re-upload your answers, and update them as appropriate.</li>
         </ul>
     </div>
-    <div class="w-100" style="vertical-align:bottom;">
-        <button onclick="GoTo('section0')" class="GoToStart">Start</button>
-        <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>
-        <button onclick="GoToNext()" class="GoToNext">Next</button>
-        <button onclick="GoToLast()" class="GoToLast">Last</button>
+    <div class="w-100">
+        <div class="actionButtons">
+            <label>Navigate:</label>
+            <button onclick="GoTo('section0')" class="GoToStart">Start</button>
+            <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>
+            <button onclick="GoToNext()" class="GoToNext">Next</button>
+            <button onclick="GoToLast()" class="GoToLast">Last</button>
+        </div>
+    </div>
+    <br />
+    <div class="w-100 row">
+        <div class="actionButtons">
+            <label for="myfile">Save your answers:</label>
+            <button onclick="Report()" id="report" name="report">Report</button>
+        </div>
 
-        <button onclick="Report()">Report</button>
-        <button onclick="Export()">Export</button>
+        <span class="actionButtons">
+            <label for="myfile">Upload saved answers:</label>
+            <input type="file" id="myfile" name="myfile" onchange="ProcessUpload()">
+        </span>
     </div>
 </body>
 </html>
