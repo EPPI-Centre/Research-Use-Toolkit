@@ -237,14 +237,16 @@ function UploadedToLocaStor(data) {
     for (let q of QuestionsList) {
         const tmp = data[q];
         if (tmp) {
-
-
-
             localStorage.setItem(q, tmp);
             doneSomething = true;
         }
     }
-    if (doneSomething == true) LoadFromLocal();
+    if (doneSomething == true) {
+        LoadFromLocal();
+        alert("Data was received, processed and 'applied' correctly");
+        var input = document.getElementById('myfile');
+        input.files = [];
+    }
 }
 function ToggleById(id) {
     const t1 = $("#" +id);
