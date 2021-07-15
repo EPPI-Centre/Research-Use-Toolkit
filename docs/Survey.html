@@ -505,7 +505,7 @@
                     <div id="descr4_2_2" class="row">
                         <span class="small"> (Find evidence via internal) </span><strong>Topic specialists</strong>
                     </div>
-                    <input type="checkbox" id="input4_2_2" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('4_2_2')" style="display:inline-block;" />
+                    <input type="checkbox" id="input4_2_2" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('4_2_2')" />
                 </div>
             </li>
             <li>
@@ -696,7 +696,7 @@
     </div>
     <div id="section5_2_0" class="section">
         <h3>Method of reviewing an evidence base to make justifiable evidence claims</h3>
-        <div style="display:flex"><img src="Assets/EvidencePyramid.png" style="width: 66%; object-fit: cover; margin-right:auto; margin-left:auto;" /></div>
+        <div style="display:flex"><img src="Assets/EvidencePyramid.png" class="inner" /></div>
     </div>
     <div id="section5_2_1" class="section">
         <h3>5.2 Evidence standards for appraising claims</h3>
@@ -783,10 +783,307 @@
             </table>
         </div>
     </div>
-    <div id="section6" class="section">
-        section 6, opened
-    </div>
 
+    <div id="section5_3" class="section">
+        <h3>5.3 Engagement with evidence</h3>
+        <p id="descr5_3">How is other information (beyond the research evidence) being used to interpret the evidence to inform decision making?</p>
+        <textarea class="w-75" id="input5_3" onblur="LocalSave('5_3')" cols="80" rows="4"></textarea>
+
+        <p id="descr5_3_1">
+            <strong>5.3.1</strong> Is the certainty provided by the evidence claim sufficient?
+        </p>
+        <ul class="small">
+            <li>In absolute terms (and in terms of the other information being considered)?</li>
+            <li>Considering the opportunity costs of the decision being made?</li>
+            <li>Is the decision clear cut (obvious from the evidence or more tentative or unknown)?</li>
+        </ul>
+        <textarea class="w-75" id="input5_3_1" onblur="LocalSave('5_3_1')" cols="80" rows="4"></textarea>
+
+        <p id="descr5_3_2">
+            <strong>5.3.2</strong> How is the evidence in practice considered and maybe used in making the decision?
+        </p>
+        <p>To what extent it this influenced by:</p>
+        <ul class="small">
+            <li>The strength of evidence</li>
+            <li>The importance of other information or factors?</li>
+            <li>Are perspectives and biases important?</li>
+        </ul>
+        <textarea class="w-75" id="input5_3_2" onblur="LocalSave('5_3_2')" cols="80" rows="4"></textarea>
+    </div>
+    <div id="section5_4" class="section">
+        <h3>5.4 Creation or use of guidance (informed by research and other information)</h3>
+        <p>Guidance is based on interpretations of evidence to guide particular decisions</p>
+        <div style="display:flex;">
+            <img class="inner" src="Assets/5_3_diagram.png" alt="Relationships between primary studies, systematic reviews and guidance" />
+        </div>
+    </div>
+    <div id="section6" class="section">
+        <h3>6. Designing a strategy to support the use of research</h3>
+        <p id="descr6" class="large">
+            Considering your objectives for the use of evidence, and how you identify and appraise relevant evidence,
+            how can you enable the use of that research evidence?
+        </p>
+        <p>Considering the sequence and levels of decision making:</p>
+        <ul>
+            <li>What are the barriers and facilitators to this use of evidence?</li>
+            <li>What type of contextual variables might impede the targeted use of your research?</li>
+            <li>
+                What factors might impede and challenge your evidence use targets, e.g. political factors, resources, relationships, timing of decision and change in evidence,
+                that might oppose your evidence claim, etc.? How can these be overcome?
+            </li>
+            <li>What actions through what mechanisms would enable evidence use?</li>
+            <li>
+                Most mechanisms are necessary but not (on their own) sufficient conditions for change. Multiple mechanisms at multiple levels plus behavioral components.
+                How will / can you intervene on the current way evidence is used and produced (evidence ecosystem)?
+            </li>
+        </ul>
+        <textarea class="w-75" id="input6" onblur="LocalSave('6')" cols="80" rows="4"></textarea>
+
+    </div>
+    <div id="section6_0" class="section">
+        <div style="display:flex">
+            <img src="Assets/6_diagram.png" class="inner max" />
+        </div>
+    </div>
+    <div id="section6_1" class="section">
+        <h3>6.1 Mechanisms</h3>
+        <div class="links">
+            <div class="linkshead">
+                Resources on enabling mechanisms:
+            </div>
+            <div id="links6_1closed" style="display:none;">
+                <button onclick="ToggleById('links6_1')">Expand</button>
+            </div>
+            <div id="links6_1">
+                <button onclick="ToggleById('links6_1')">Close</button>
+                <ul>
+                    <li>
+                        Link 1
+                    </li>
+                    <li>
+                        Link 2
+                    </li>
+                    <li>
+                        Link 3
+                    </li>
+                    <li>
+                        Link 4
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>
+            Given the barriers and facilitators identified above, which of the below mechanism(s) do you think could be help address/support these?
+            <span class="small">(please tick all that apply)</span>
+        </p>
+        <ul>
+            <li>
+                <div class="dotted" style="display:flex;">
+                    <div id="descr6_1_1" class="row">
+                        <em>(Mechanism 1)</em> Creating general awareness for the consideration of research evidence in decision-making
+                    </div>
+                    <input type="checkbox" id="input6_1_1" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_1')" />
+                </div>
+            </li>
+            <li>
+                <div class="dotted" style="display:flex;">
+                    <div id="descr6_1_2" class="row">
+                        <em>(Mechanism 2)</em> Enhancing the policy relevance of the reporting of research evidence your research study
+                    </div>
+                    <input type="checkbox" id="input6_1_2" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_2')" />
+                </div>
+            </li>
+            <li>
+                <div class="dotted" style="display:flex;">
+                    <div id="descr6_1_3" class="row">
+                        <em>(Mechanism 3)</em> Enhancing the communication of and access to research evidence
+                    </div>
+                    <input type="checkbox" id="input6_1_3" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_3')" />
+                </div>
+            </li>
+            <li>
+                <div class="dotted" style="display:flex;">
+                    <div id="descr6_1_4" class="row">
+                        <em>(Mechanism 4)</em> Building trusted relationships with users of research and researchers
+                    </div>
+                    <input type="checkbox" id="input6_1_4" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_4')" />
+                </div>
+            </li>
+            <li>
+                <div class="dotted" style="display:flex;">
+                    <div id="descr6_1_5" class="row">
+                        <em>(Mechanism 5)</em> Enhancing the skills of decisions-makers to make sense of research evidence and how to feed it into practice and policy
+                    </div>
+                    <input type="checkbox" id="input6_1_5" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_5')" />
+                </div>
+            </li>
+            <li>
+                <div class="dotted" style="display:flex;">
+                    <div id="descr6_1_6" class="row">
+                        <em>(Mechanism 6)</em> Changing structures and processes to make organisations and institutions make receptive to research
+                    </div>
+                    <input type="checkbox" id="input6_1_6" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_6')" />
+                </div>
+            </li>
+        </ul>
+        <p id="descr6_1_7">
+            Can you give practical examples of having used or planning to use these?
+        </p>
+        <textarea class="w-75" id="input6_1_7" onblur="LocalSave('6_1_7')" cols="80" rows="4"></textarea>
+
+    </div>
+    <div id="section6_2_0" class="section">
+        <h3>Mechanisms and behavior change</h3>
+        <div style="display:flex;">
+            <img src="Assets/6_2_diagram.png" class="inner" />
+        </div>
+    </div>
+    <div id="section6_2" class="section">
+        <h3>6.2 Behaviour change </h3>
+        <p class="large">What about the capacity, opportunity and motivation to develop aims, methods and mechanisms to use evidence?</p>
+
+        <p id="descr6_2_1">Do you or your intended user audience possess the capability <span class="small">(to use the evidence)</span>?</p>
+        <ul>
+            <li>If not, does this hinder your research use targets?</li>
+            <li>If unclear, how could you diagnose the exact state?</li>
+        </ul>
+        <textarea class="w-75" id="input6_2_1" onblur="LocalSave('6_2_1')" cols="80" rows="4"></textarea>
+
+        <p id="descr6_2_2">Do you or your intended user audience possess the motivation <span class="small">(to use the evidence)</span>?</p>
+        <ul>
+            <li>If not, does this hinder your research use targets?</li>
+            <li>If unclear, how could you diagnose the exact state?</li>
+        </ul>
+        <textarea class="w-75" id="input6_2_2" onblur="LocalSave('6_2_2')" cols="80" rows="4"></textarea>
+
+        <p id="descr6_2_3">Will you or your intended user audience have the opportunity <span class="small">(to use the evidence)</span>?</p>
+        <ul>
+            <li>If not, does this hinder your research use targets?</li>
+            <li>If unclear, how could you diagnose the exact state?</li>
+        </ul>
+        <textarea class="w-75" id="input6_2_3" onblur="LocalSave('6_2_3')" cols="80" rows="4"></textarea>
+    </div>
+    <div id="section6_3" class="section">
+        <h3>6.3 Activities to enable evidence use</h3>
+        <div class="links">
+            <div class="linkshead">
+                Evidence on enabling evidence use:
+            </div>
+            <div id="links6_3closed" style="display:none;">
+                <button onclick="ToggleById('links6_3')">Expand</button>
+            </div>
+            <div id="links6_3">
+                <button onclick="ToggleById('links6_3')">Close</button>
+                <ul>
+                    <li>
+                        Link 1
+                    </li>
+                    <li>
+                        Link 2
+                    </li>
+                    <li>
+                        Link 3
+                    </li>
+                    <li>
+                        Link 4
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p id="descr6_3_1">
+            <strong>6.3.1</strong> What is the current situation, can this change, and are there structures and processes to support this?
+        </p>
+        <textarea class="w-50" id="input6_3_1" onblur="LocalSave('6_3_1')" cols="80" rows="6"></textarea>
+
+        <p id="descr6_3_2">
+            <strong>6.3.2</strong> What activities will you engage in to change things for yourself and the context you work within?
+        </p>
+        <p> For example, these could be:</p>
+        <ul>
+            <li>Change barriers and facilitators?</li>
+            <li>Enable mechanisms?</li>
+            <li>Enable behaviour change?</li>
+        </ul>
+        <textarea class="w-75" id="input6_3_2" onblur="LocalSave('6_3_2')" cols="80" rows="4"></textarea>
+
+    </div>
+    <div id="section7" class="section">
+        <h3>7. Monitoring The Research Use Activities</h3>
+        <p>
+            In previous sections you have recorded aspects of the current situation and your plans to increase the use of research in decision making
+            (in general or specific to particular decisions).<br />
+            This section is to support you to think through the ways in which you can monitor the implementation and progress of your research use activities.
+        </p>
+        <p id="descr7_1"><strong>7.1</strong> What are the (monitoring) actions you plan to take?</p>
+        <textarea class="w-75" id="input7_1" onblur="LocalSave('7_1')" cols="80" rows="4"></textarea>
+
+        <p id="descr7_2"><strong>7.2</strong> How do these fit with the levels and sequence of decision making described earlier?</p>
+        <textarea class="w-75" id="input7_2" onblur="LocalSave('7_2')" cols="80" rows="4"></textarea>
+
+        <p id="descr7_3"><strong>7.3</strong> What will be the metrics for you to monitor progress on these plans?</p>
+        <textarea class="w-75" id="input7_3" onblur="LocalSave('7_3')" cols="80" rows="4"></textarea>
+        <div style=display:flex; float: right;">
+            <div style="background-color:yellow; display:flex; margin-right:auto;" class="small">
+                <p>
+                    Status:
+                </p>
+                <ul>
+                    <li>Planned</li>
+                    <li>Ongoing</li>
+                    <li>Complete</li>
+                    <li>Cancelled</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="section8_1" class="section">
+        <h3>8. Evaluation Of Research Use</h3>
+        <p>This section is to support you to think through the ways in which you can evaluate the implementation and progress of your research use activities.</p>
+        <p><strong>Reflections on the use of evidence</strong></p>
+        <p id="descr8_1">
+            <strong>8.1</strong> What are the "research use" indicators you can monitor?
+        </p>
+        <textarea class="w-75" id="input8_1" onblur="LocalSave('8_1')" cols="80" rows="4"></textarea>
+
+        <p id="descr8_2">
+            <strong>8.2</strong> Your reflections on the nature an extent of research use:
+        </p>
+        <textarea class="w-75" id="input8_2" onblur="LocalSave('8_2')" cols="80" rows="4"></textarea>
+    </div>
+    
+    <div id="section8_3" class="section">
+        <h3>8.3 Evaluation activities </h3>
+        <div style="float: right;">
+            <div style="background-color:yellow; display:flex; " class="small">
+                <p>
+                    Status:
+                </p>
+                <ul>
+                    <li>Planned</li>
+                    <li>Ongoing</li>
+                    <li>Complete</li>
+                    <li>Cancelled</li>
+                </ul>
+            </div>
+        </div>
+        <p>Evidence needs and objectives (based on Section 2.4)</p>
+        <p id="descr8_3_1">
+            <strong>8.3.1</strong> How are you going to evaluate whether you have achieved your aim?
+        </p>
+        <textarea class="w-75" id="input8_3_1" onblur="LocalSave('8_3_1')" cols="80" rows="4"></textarea>
+        <p id="descr8_3_2">
+            <strong>8.3.2</strong> Record here any evaluation data or evidence here related to this aim.
+        </p>
+        <textarea class="w-75" id="input8_3_2" onblur="LocalSave('8_3_2')" cols="80" rows="4"></textarea>
+    </div>
+    <div id="section8_4" class="section">
+        <h3>The toolkit ends here</h3>
+        <p class="large">You can use the button below, to:</p>
+        <ul class="large">
+            <li>Download your answers, for your record</li>
+            <li>Optionally, return here, re-upload your answers, and update them as appropriate.</li>
+        </ul>
+    </div>
     <div class="w-100" style="vertical-align:bottom;">
         <button onclick="GoTo('section0')" class="GoToStart">Start</button>
         <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>

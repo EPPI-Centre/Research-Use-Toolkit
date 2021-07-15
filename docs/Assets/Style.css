@@ -74,6 +74,14 @@ ul {
 .smaller {
     font-size: 0.75em;
 }
+
+.dotted {
+    border: 1px dotted #808080;
+    margin-bottom:4px;
+    padding-left:0.5em;
+    padding-right:0.2em;
+}
+
 div.row {
     display:inline;
 }
@@ -117,6 +125,18 @@ tr {
 }
 tr.evenRow {
     background-color: #f2f2f2;
+}
+img.inner {
+    border: 1px solid #808080;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+    width: 66%;
+    object-fit: cover;
+}
+img.max {
+    width: 90% !important;
 }
 
 
