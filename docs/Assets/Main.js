@@ -194,9 +194,10 @@ function ProcessUpload() {
         }
         else {
             var file = input.files[0];
-            
-            fr.onload = receivedText;
-            fr.readAsText(file);
+            if (file) {
+                fr.onload = receivedText;
+                fr.readAsText(file);
+            }
             //fr.readAsBinaryString(file); //as bit work with base64 for example upload to server
             //fr.readAsDataURL(file);
         }
@@ -244,8 +245,7 @@ function UploadedToLocaStor(data) {
     if (doneSomething == true) {
         LoadFromLocal();
         alert("Data was received, processed and 'applied' correctly");
-        var input = document.getElementById('myfile');
-        input.files = [];
+        $('#myfile').val('');
     }
 }
 function ToggleById(id) {
