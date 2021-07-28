@@ -28,7 +28,7 @@ h3 {
 }
 h4 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     color: blueviolet;
     margin-top: 0.4em;
     margin-bottom: 0.2em;
@@ -84,6 +84,9 @@ ul {
 
 div.row {
     display:inline;
+}
+div.flexrow {
+    display: inline-flex;
 }
 .section {
     padding-bottom: 0.5em;
@@ -150,8 +153,14 @@ img.max {
     background-color:#f4f4f4;
 }
 
-
-
+.mx-1 {
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+}
+.px-1 {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
 
 
 

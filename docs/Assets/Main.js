@@ -6,8 +6,9 @@
     , "3_1_1", "3_1_2", "3_1_3", "3_1_4", "3_2", "3_3"
     , "4_1", "4_2_1", "4_2_2", "4_2_3", "4_2_4", "4_2_5", "4_2_6", "4_2_7", "4_2_8", "4_2_9", "4_3"
     , "5_1_1", "5_1_2", "5_1_3", "5_2", "5_3", "5_3_1", "5_3_2"
-    , "6", "6_1_1", "6_1_2", "6_1_3", "6_1_4", "6_1_5", "6_1_6", "6_1_7", "6_2_1", "6_2_2", "6_2_3", "6_3_1", "6_3_2"
-    , "7_1", "7_2", "7_3"
+    , "6", "6_1_1", "6_1_2", "6_1_3", "6_1_4", "6_1_5", "6_1_6", "6_1_7", "6_2_1", "6_2_2", "6_2_3", "6_3_1"
+    //, "6_3_2"
+    , "7_1", "7_2", "7_3", "7_4", "7_5"
     , "8_1", "8_2", "8_3_1", "8_3_2"
 ];
 const CheckBoxes = [
@@ -273,7 +274,10 @@ function GoTo(SectionId) {
         }
     }
     let ind = Sections.indexOf(CurrentSection);
-    if (ind == -1) return;
+    if (ind == -1) {
+        $("#navigationcounter").text("");
+        return;
+    }
     if (ind == 0) {
         $(".GoToStart").prop("disabled", true);
         $(".GoToPrevious").prop("disabled", true);
@@ -292,6 +296,7 @@ function GoTo(SectionId) {
         $(".GoToNext").prop("disabled", false);
         $(".GoToLast").prop("disabled", false);
     }
+    $(".navigationcounter").text("Slide " + (ind + 1).toString() + " of " + Sections.length);
 }
 function GoToNext() {
     let ind = Sections.indexOf(CurrentSection);

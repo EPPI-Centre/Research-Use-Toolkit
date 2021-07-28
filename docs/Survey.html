@@ -23,14 +23,15 @@
             <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>
             <button onclick="GoToNext()" class="GoToNext">Next</button>
             <button onclick="GoToLast()" class="GoToLast">Last</button>
+            <label class="navigationcounter"></label>
         </div>
     </div>
 
     <div class="section" id="AimsSection">
-        <h2>
+        <!--<h2>
             <span class="small" style="color:red; font-weight:bold">[This is WORK in progress!]</span>
-        </h2>
-        <p class="large">
+        </h2>-->
+        <p class="large" style="margin-top:1em;">
             <em>
                 This toolkit is designed to help consider and review your strategy for making use of research evidence, with links to relevant resources.
             </em>
@@ -41,6 +42,19 @@
         <h2>
             What is this toolkit?
         </h2>
+        <div id="links0" class="links small" style="display:none;">
+            <div>
+                <button onclick="ToggleById('links0')">Close</button>
+                <h4>Handling your data</h4>
+                <p>
+                    This toolkit uses JavaScript and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank">Local storage</a>
+                    to automatically "save" the data you enter. This ensures the data never leaves your computer.<br />
+                    Similarly, clicking on "Report" and re-uploading a saved report does not involve any data exchange with our servers:
+                    when clicking on "Report" and "Upload" the data is obtained from or saved to the local storage, respectively.<br />
+                    Moreover, this toolkit does not depend on any cookie.
+                </p>
+            </div>
+        </div>
         <ul class="large">
             <li>
                 Research evidence can be a useful resource (amongst many others) to inform decision making
@@ -52,7 +66,9 @@
                 It can complement any other methods and procedures you have for using evidence or making decisions
             </li>
             <li>
-                Any data that you enter into the toolkit is private to you and anywhere that you may wish to save it. The toolkit does not record or in any way keep the data. The providers of the toolkit have no access to your data.
+                Any data that you enter into the toolkit is private to you, you can save it explicitly by clicking on the "Report" below. 
+                The toolkit does not send any data to external servers and the providers of the toolkit have no access to your data.
+                <span id=""><a href="#" id="links0closed" class="smaller mx-1" onclick="ToggleById('links0')"> More...</a></span>
             </li>
         </ul>
     </div>
@@ -389,7 +405,7 @@
     <div id="section3" class="section">
 
         <h3>3. The Types Of Evidence You Need</h3>
-        <div class="links">
+        <!--<div class="links">
             <div class="linkshead">
                 Resources with overview of research methods
             </div>
@@ -413,7 +429,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>-->
         <p class="large">
             The aim of this section is to think more about the exact nature of the research evidence that can be helpful to your decision-making. <br />
             Different types of research evidence are useful for different types of decision-making contexts and it is important to match the research to the decision-making need.
@@ -445,10 +461,10 @@
         <textarea class="w-75" id="input3_1_4" onblur="LocalSave('3_1_4')" cols="70" rows="4"></textarea>
     </div>
     <div id="section3_2" class="section">
-        <p>
-            <strong id="descr3_2">3.2 What types of research question?</strong> For example:
+        <p id="descr3_2" class="large">
+            <strong>3.2</strong>: What types of research question?
         </p>
-        <div class="links">
+        <!--<div class="links">
             <div class="linkshead">
                 Links to resources on all of these methods
             </div>
@@ -457,7 +473,7 @@
             </div>
             <div id="links3_2">
                 <button onclick="ToggleById('links3_2')">Close</button>
-                <ul ">
+                <ul>
                     <li>
                         Link 1
                     </li>
@@ -472,7 +488,13 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>-->
+        <p  class="bg-light small mx-1 px-1" style="display:grid;">
+                NB: The type of question to ask will depend on the issue but also on where the research evidence is being situated within the decision-making process.
+        </p>
+        <p>
+            Examples of types of research question:
+        </p>        
         <ul>
             <li>
                 What are people’s views and priorities? (eg in depth qualitative)
@@ -495,8 +517,8 @@
         </ul>
         <textarea class="w-50" id="input3_2" onblur="LocalSave('3_2')" cols="70" rows="4"></textarea>
 
-        <p>
-            <strong id="descr3_3">3.3 What types of research design? </strong> For example:
+        <p class="large" id="descr3_3">
+            <strong>3.3</strong>: What types of research design to answer those questions? For example:
         </p>
         <ul>
             <li>
@@ -530,7 +552,7 @@
     </div>
     <div id="section4_2" class="section">
         <h3>4.2 Search strategy: How & where to look? How can you search?</h3>
-        <div class="links">
+        <!--<div class="links">
             <div class="linkshead">
                 Resources on searching and challenges with appraising / using these
             </div>
@@ -554,7 +576,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>-->
         <p id=""><strong>Find evidence within your organisation</strong> (tick all that apply)</p>
         <ul>
             <li>
@@ -639,10 +661,11 @@
         </ul>
     </div>
     <div id="section4_3" class="section">
-        <h3 id="descr4_3">
-            4.3 What is your capacity (including any formalised processes and resources) to identify and synthesize different bits of research evidence for different decisions?
-        </h3>
-        <div class="links">
+        <p id="descr4_3" class="large">
+            <strong>4.3</strong>: What is your capacity (including any formalised processes and resources available to you) 
+            to identify and bring together (synthesize) different bits of research evidence for different decisions?
+        </p>
+        <!--<div class="links">
             <div class="linkshead">
                 Resources for section 4.3
             </div>
@@ -666,8 +689,8 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <p class="">Examples include:</p>
+        </div>-->
+        <p class="">For example:</p>
         <ul class="small">
             <li>
                 Knowledge brokers
@@ -693,7 +716,7 @@
     <div id="section5" class="section">
         <h3>5. APPRAISING THE EVIDENCE</h3>
         <p class="large">Research findings make ‘evidence claims. Before we rely on such claims we need to be ask:</p>
-        <div class="links">
+        <!--<div class="links">
             <div class="linkshead">
                 Resources for section 5
             </div>
@@ -717,7 +740,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>-->
         <ul>
             <li>Are the research findings (evidence claims) justified?</li>
             <li>Are the research findings relevant (to the decision-making)?</li>
@@ -760,11 +783,23 @@
 
     </div>
     <div id="section5_2_0" class="section">
-        <h3>Method of reviewing an evidence base to make justifiable evidence claims</h3>
-        <div style="display:flex"><img src="Assets/EvidencePyramid.png" class="inner" /></div>
-    </div>
-    <div id="section5_2_1" class="section">
         <h3>5.2 Evidence standards for appraising claims</h3>
+        <div id="links5_2_0" class="links small" style="display:none;">
+            <div>
+                <button onclick="ToggleById('links5_2_0')">Close</button>
+                <h4>Evidence standards</h4>
+                <p>
+                    These are the bases of the criteria for the study to make an 'evidence claim'.
+                    This is dependent on the relevance and the trustworthiness of the research findings.
+                    There are a number of tools available to assess the trustworthiness of the methods in terms of:
+                </p>
+                <ol>
+                    <li>The evidence claim being made on the basis of all of the relevant knowledge base (not just one study). See slide on reviewing a knowledge base.</li>
+                    <li>The rigour and thus trustworthiness of the research. See slide with examples of Appraisal Tools.</li>
+                    <li>The relevance of the focus of the research for the decisions being made.</li>
+                </ol>
+            </div>
+        </div>
         <p>There are many approaches to appraising evidence:</p>
         <ul>
             <li>Methods guidance: how best to conduct studies</li>
@@ -772,10 +807,16 @@
             <li>Reporting standards: criteria for reporting how research evidence was produced</li>
             <li>Internal quality assurance: methods and processes for ensuring that appropriate methods are rigorously applied when undertaking and reporting research</li>
         </ul>
-        <p class="large">
-            Examples of tools to check the methods or reporting standards: <span style="background-color:yellow">[?????]</span>
-        </p>
+        <div class="large flexrow">
+            For those using and thus appraising evidence, the priority is the 'Methods standards'.
+            <div id=""><a href="#" id="links5_2_0closed" class="smaller mx-1" onclick="ToggleById('links5_2_0')"> More...</a></div>
+        </div>
 
+
+    </div>
+    <div id="section5_2_1" class="section">
+        <h3>Method standards for reviewing an evidence base to make justifiable evidence claims</h3>
+        <div style="display:flex"><img src="Assets/EvidencePyramid.png" class="inner" /></div>
     </div>
     <div id="section5_2_2" class="section">
         <h3>
@@ -911,8 +952,9 @@
         </div>
     </div>
     <div id="section6_1" class="section">
-        <h3>6.1 Mechanisms</h3>
-        <div class="links">
+        <h3>Actions</h3>
+        <p><strong>6.1</strong>: Mechanisms</p>
+        <div class="links" style="display:none;">
             <div class="linkshead">
                 Resources on enabling mechanisms:
             </div>
@@ -938,32 +980,63 @@
             </div>
         </div>
         <p>
-            Given the barriers and facilitators identified above, which of the below mechanism(s) do you think could be help address/support these?
+            Given the barriers and facilitators identified above, which of the below mechanism(s) do you think could help address/support these?
             <span class="small">(please tick all that apply)</span>
         </p>
         <ul>
             <li>
                 <div class="dotted" style="display:flex;">
                     <div id="descr6_1_1" class="row">
-                        <em>(Mechanism 1)</em> Creating general awareness for the consideration of research evidence in decision-making
+                        <span style="font-style:italic">(Mechanism 1)</span> Creating general awareness for the possibility of using research evidence in decision-making
                     </div>
-                    <input type="checkbox" id="input6_1_1" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_1')" />
+                    <input type="checkbox" id="input6_1_1" style="margin-left: 1.5em; margin-right:0.6em; margin-top:0.3em; margin-bottom: auto;" onblur="LocalSave('6_1_1')" />
+                    <div id=""><a href="#" id="links6_1_1closed" class="small" onclick="ToggleById('links6_1_1')"> More...</a></div>
+                    <div id="links6_1_1" class="links small" style="display:none;">
+                        <div>
+                            <button onclick="ToggleById('links6_1_1')">Close</button>
+                            <p>
+                                Decisions are informed and otherwise influenced by many factors, including, for example, inclusion values, political drivers, and opinions.
+                                Research evidence is just one of many such factors potentially informing decision-making.
+                                It may be that research evidence is not even considered, or it may be considered and used in a biased selective way
+                                to support and justify decisions already made on the base of other factors.
+                                Increasing awareness of the potential for research evidence to truly inform decision-making can be one mechanism to help achieve this.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li>
                 <div class="dotted" style="display:flex;">
                     <div id="descr6_1_2" class="row">
-                        <em>(Mechanism 2)</em> Enhancing the policy relevance of the reporting of research evidence your research study
+                        <span style="font-style:italic">(Mechanism 2)</span> Enhancing the policy relevance of the reporting of research evidence
                     </div>
-                    <input type="checkbox" id="input6_1_2" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_2')" />
+                    <input type="checkbox" id="input6_1_2" style="margin-left: 1.5em; margin-right: 0.6em; margin-top: 0.3em; margin-bottom: auto;" onblur="LocalSave('6_1_2')" />
+                    <div id=""><a href="#" id="links6_1_2closed" class="small" onclick="ToggleById('links6_1_2')"> More...</a></div>
+                    <div id="links6_1_2" class="links small" style="display:none;">
+                        <div>
+                            <button onclick="ToggleById('links6_1_2')">Close</button>
+                            <p>
+                                Although there may be plenty of research evidence available on a topic, it does not mean that it is necessarily relevant to decision makers.
+                                The research may have been driven and framed by others' interests.
+                                The research may not be framed in a way that provides relevant information for the decision being made.
+                                This is one reason for the growth in 'demand led' research.
+                                This demand can be from anyone for whom research may be useful including policy makers, professional practitioners and users of services.
+                                There has been criticism of some research ignoring some 'voices'
+                                (perspectives: ideological and theoretical assumptions and priorities).
+                            </p>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </li>
             <li>
                 <div class="dotted" style="display:flex;">
                     <div id="descr6_1_3" class="row">
-                        <em>(Mechanism 3)</em> Enhancing the communication of and access to research evidence
+                        <span style="font-style:italic">(Mechanism 3)</span> Enhancing the communication of and access to research evidence
                     </div>
-                    <input type="checkbox" id="input6_1_3" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_3')" />
+                    <input type="checkbox" id="input6_1_3" style="margin-left: 1.5em; margin-right: 0.6em; margin-top: 0.3em; margin-bottom: auto;" onblur="LocalSave('6_1_3')" />
                     <div id=""><a href="#" id="links6_1_3closed" class="small" onclick="ToggleById('links6_1_3')"> More...</a></div>
                     <div id="links6_1_3" class="links small" style="display:none;">
                         <div>
@@ -971,9 +1044,10 @@
                             <p>
                                 Studies of 'research use' have shown that the communication of research findings, on its own, is not associated with increased use of those findings
                                 (<a href="https://discovery.ucl.ac.uk/id/eprint/1493171/" target="_blank">Langer et al 2016</a>).
-                                EEF, for example, undertook attempted 8 different ways to communicate research on literacy to teachers,
+                                EEF, for example, attempted 8 different ways to communicate research on literacy to teachers,
                                 and none were effective in increasing the use of that research (<a href="https://eric.ed.gov/?id=ED581230" target="_blank">Lord et al 2018</a>). <br />
-                                The communication of evidence is thus a necessary but not a sufficient condition for the use of evidence.
+                                The communication of evidence is thus a necessary but not a sufficient condition for the use of evidence.<br />
+                                There can also be knowledge brokerage resources that support users in interpreting and providing access to relevant research.
                             </p>
                         </div>
                     </div>
@@ -982,27 +1056,68 @@
             <li>
                 <div class="dotted" style="display:flex;">
                     <div id="descr6_1_4" class="row">
-                        <em>(Mechanism 4)</em> Building trusted relationships with users of research and researchers
+                        <span style="font-style:italic">(Mechanism 4)</span> Building trusted relationships between users and producers of research
                     </div>
-                    <input type="checkbox" id="input6_1_4" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_4')" />
+                    <input type="checkbox" id="input6_1_4" style="margin-left: 1.5em; margin-right: 0.6em; margin-top: 0.3em; margin-bottom: auto;" onblur="LocalSave('6_1_4')" />
+                    <div id=""><a href="#" id="links6_1_4closed" class="small" onclick="ToggleById('links6_1_4')"> More...</a></div>
+                    <div id="links6_1_4" class="links small" style="display:none;">
+                        <div>
+                            <button onclick="ToggleById('links6_1_4')">Close</button>
+                            <p>
+                                It is often argued that there is a 'gap' between the users (such as decision makers) and producers of research (researchers).
+                                It is therefore suggested that developing familiarity and good relationships between users and producers might enable the use of research.
+                                Studies of these processes has found that such relationships can enhance research use,
+                                but only if there are other factors increasing the motivation and opportunity to use research
+                                (<a href="https://discovery.ucl.ac.uk/id/eprint/1493171/" target="_blank">Langer et al 2016</a>).<br />
+                                Good relationships do not seem to be a sufficient condition for research use.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li>
                 <div class="dotted" style="display:flex;">
                     <div id="descr6_1_5" class="row">
-                        <em>(Mechanism 5)</em> Enhancing the skills of decisions-makers to make sense of research evidence and how to feed it into practice and policy
+                        <span style="font-style:italic">(Mechanism 5)</span> Enhancing the skills of individuals, teams and organisations to make sense of research evidence and how to feed it into practice and policy
                     </div>
-                    <input type="checkbox" id="input6_1_5" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_5')" />
+                    <input type="checkbox" id="input6_1_5" style="margin-left: 1.5em; margin-right: 0.6em; margin-top: 0.3em; margin-bottom: auto;" onblur="LocalSave('6_1_5')" />
+                    <div id=""><a href="#" id="links6_1_5closed" class="small" onclick="ToggleById('links6_1_5')"> More...</a></div>
+                    <div id="links6_1_5" class="links small" style="display:none;">
+                        <div>
+                            <button onclick="ToggleById('links6_1_5')">Close</button>
+                            <p>
+                                Decision makers have different skills and responsibilities to researchers.
+                                There is no reason to expect them to know the details of research methods.
+                                It is therefore sometimes argued that greater use of research would occur if potential users were given training in research methods.
+                                It can be argued, however, that the priority should be in developing skills in appraising and making use of research
+                                rather than the details of research method.<br />
+                                There can also be knowledge brokerage resources that support users in interpreting and providing access to relevant research.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li>
                 <div class="dotted" style="display:flex;">
                     <div id="descr6_1_6" class="row">
-                        <em>(Mechanism 6)</em> Changing structures and processes to make organisations and institutions make receptive to research
+                        <span style="font-style:italic">(Mechanism 6)</span> Changing structures and processes to enable organisations to be more receptive to research
                     </div>
-                    <input type="checkbox" id="input6_1_6" style="margin-left:1.5em; margin-top:auto;" onblur="LocalSave('6_1_6')" />
+                    <input type="checkbox" id="input6_1_6" style="margin-left: 1.5em; margin-right: 0.6em; margin-top: 0.3em; margin-bottom: auto;" onblur="LocalSave('6_1_6')" />
+                    <div id=""><a href="#" id="links6_1_6closed" class="small" onclick="ToggleById('links6_1_6')"> More...</a></div>
+                    <div id="links6_1_6" class="links small" style="display:none;">
+                        <div>
+                            <button onclick="ToggleById('links6_1_6')">Close</button>
+                            <p>
+                                This is a 'higher level' mechanism where organizational processes enable the other mechanisms to function.
+                                If an organisation has processes for automatically considering research in decision then this might enable awareness of the relevance of research (M1),
+                                access to that research (M3), and the Capacity,
+                                Opportunity and Motivation to make use of that research.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </li>
+            
         </ul>
         <p id="descr6_1_7">
             Can you give practical examples of having used or planning to use these?
@@ -1017,8 +1132,9 @@
         </div>
     </div>
     <div id="section6_2" class="section">
-        <h3>6.2 Behaviour change </h3>
-        <p class="large">What about the capacity, opportunity and motivation to develop aims, methods and mechanisms to use evidence?</p>
+        <h3>Actions</h3>
+        <p><strong>6.2</strong>: Behaviour change </p>
+        <p class="large">Is there currently (and can you increase) the capacity, opportunity and motivation to enable the use of research?</p>
 
         <p id="descr6_2_1">Do you or your intended user audience possess the capability <span class="small">(to use the evidence)</span>?</p>
         <ul>
@@ -1042,68 +1158,56 @@
         <textarea class="w-75" id="input6_2_3" onblur="LocalSave('6_2_3')" cols="80" rows="4"></textarea>
     </div>
     <div id="section6_3" class="section">
-        <h3>6.3 Activities to enable evidence use</h3>
-        <div class="links">
+        <h3>Actions</h3>
+        <p class="large">Activities to enable evidence use</p>
+        <!--<div class="links">
             <div class="linkshead">
                 Evidence on enabling evidence use:
             </div>
             <div id="links6_3closed" style="display:none;">
-                <button onclick="ToggleById('links6_3')">Expand</button>
-            </div>
-            <div id="links6_3">
-                <button onclick="ToggleById('links6_3')">Close</button>
-                <ul>
-                    <li>
-                        Link 1
-                    </li>
-                    <li>
-                        Link 2
-                    </li>
-                    <li>
-                        Link 3
-                    </li>
-                    <li>
-                        Link 4
-                    </li>
-                </ul>
-            </div>
+            <button onclick="ToggleById('links6_3')">Expand</button>
         </div>
+        <div id="links6_3">
+            <button onclick="ToggleById('links6_3')">Close</button>
+            <ul>
+                <li>
+                    Link 1
+                </li>
+                <li>
+                    Link 2
+                </li>
+                <li>
+                    Link 3
+                </li>
+                <li>
+                    Link 4
+                </li>
+            </ul>
+        </div>-->
         <p id="descr6_3_1">
-            <strong>6.3.1</strong> What is the current situation, can this change, and are there structures and processes to support this?
-        </p>
-        <textarea class="w-50" id="input6_3_1" onblur="LocalSave('6_3_1')" cols="80" rows="6"></textarea>
-
-        <p id="descr6_3_2">
-            <strong>6.3.2</strong> What activities will you engage in to change things for yourself and the context you work within?
+            <strong>6.3</strong>: What opportunities are there for your and your organisation to enable evidence use? At what level of the organisation and at what part of the decision-making process could this be?
         </p>
         <p> For example, these could be:</p>
         <ul>
-            <li>Change barriers and facilitators?</li>
-            <li>Enable mechanisms?</li>
-            <li>Enable behaviour change?</li>
+            <li>Change barriers and facilitators</li>
+            <li>Enable mechanisms</li>
+            <li>Enable behaviour change</li>
         </ul>
-        <textarea class="w-75" id="input6_3_2" onblur="LocalSave('6_3_2')" cols="80" rows="4"></textarea>
+        <textarea class="w-50" id="input6_3_1" onblur="LocalSave('6_3_1')" cols="80" rows="6"></textarea>
+
+        <!--<p id="descr6_3_2">
+            <strong>6.3.2</strong> What activities will you engage in to change things for yourself and the context you work within?
+        </p>
+
+        <textarea class="w-75" id="input6_3_2" onblur="LocalSave('6_3_2')" cols="80" rows="4"></textarea>-->
 
     </div>
     <div id="section7" class="section">
-        <h3>7. Monitoring The Research Use Activities</h3>
-        <p>
-            In previous sections you have recorded aspects of the current situation and your plans to increase the use of research in decision making
-            (in general or specific to particular decisions).<br />
-            This section is to support you to think through the ways in which you can monitor the implementation and progress of your research use activities.
-        </p>
-        <p id="descr7_1"><strong>7.1</strong> What are the (monitoring) actions you plan to take?</p>
-        <textarea class="w-75" id="input7_1" onblur="LocalSave('7_1')" cols="80" rows="4"></textarea>
-
-        <p id="descr7_2"><strong>7.2</strong> How do these fit with the levels and sequence of decision making described earlier?</p>
-        <textarea class="w-75" id="input7_2" onblur="LocalSave('7_2')" cols="80" rows="4"></textarea>
-
-        <p id="descr7_3"><strong>7.3</strong> What will be the metrics for you to monitor progress on these plans?</p>
-        <textarea class="w-75" id="input7_3" onblur="LocalSave('7_3')" cols="80" rows="4"></textarea>
-        <div style=display:flex; float: right;">
-            <div style="background-color:yellow; display:flex; margin-right:auto;" class="small">
+        <h3>7. Monitoring and Evaluating the Research Use Activities</h3>
+        <div class="links" style="float: right; ">
+            <div class="small">
                 <p>
-                    Status:
+                    Each actvity may be recroded along with its "Status", for example:
                 </p>
                 <ul>
                     <li>Planned</li>
@@ -1113,28 +1217,51 @@
                 </ul>
             </div>
         </div>
+        <p>
+            In previous sections you have recorded aspects of the current situation and your plans to increase the use of research in decision making
+            (in general or specific to particular decisions).<br />
+            <br />
+            What is your theory of change (why the actions should have the effect you want)?
+        </p>
+        <p id="descr7_1"><strong>7.1</strong>: What are the (monitoring) actions you plan to take?</p>
+        <textarea class="w-75" id="input7_1" onblur="LocalSave('7_1')" cols="80" rows="4"></textarea>
+
+        <p id="descr7_2"><strong>7.2</strong>: Why should these make a  difference?</p>
+        <textarea class="w-75" id="input7_2" onblur="LocalSave('7_2')" cols="80" rows="4"></textarea>
+
+        <p id="descr7_3"><strong>7.3</strong>: What is your theory of change (why the actions should have the effect you want)?</p>
+        <textarea class="w-75" id="input7_3" onblur="LocalSave('7_3')" cols="80" rows="4"></textarea>
+
+        <p id="descr7_4"><strong>7.4</strong>: How do these fit with the levels and sequence of decision making described earlier?</p>
+        <textarea class="w-75" id="input7_4" onblur="LocalSave('7_4')" cols="80" rows="4"></textarea>
+
+        <p id="descr7_5"><strong>7.5</strong>: What will be the metrics for you to monitor progress and outcomes of on these plans?</p>
+        <textarea class="w-75" id="input7_5" onblur="LocalSave('7_5')" cols="80" rows="4"></textarea>
+
+
+
     </div>
     <div id="section8_1" class="section">
         <h3>8. Evaluation Of Research Use</h3>
         <p>This section is to support you to think through the ways in which you can evaluate the implementation and progress of your research use activities.</p>
         <p><strong>Reflections on the use of evidence</strong></p>
         <p id="descr8_1">
-            <strong>8.1</strong> What are the "research use" indicators you can monitor?
+            <strong>8.1</strong>: What are the "research use" indicators you can monitor?
         </p>
         <textarea class="w-75" id="input8_1" onblur="LocalSave('8_1')" cols="80" rows="4"></textarea>
 
         <p id="descr8_2">
-            <strong>8.2</strong> Your reflections on the nature an extent of research use:
+            <strong>8.2</strong>: Your reflections on the nature an extent of research use:
         </p>
         <textarea class="w-75" id="input8_2" onblur="LocalSave('8_2')" cols="80" rows="4"></textarea>
     </div>
 
     <div id="section8_3" class="section">
         <h3>8.3 Evaluation activities </h3>
-        <div style="float: right;">
-            <div style="background-color:yellow; display:flex; " class="small">
+        <div class="links" style="float: right; ">
+            <div class="small">
                 <p>
-                    Status:
+                    Each actvity may be recroded along with its "Status", for example:
                 </p>
                 <ul>
                     <li>Planned</li>
@@ -1146,11 +1273,11 @@
         </div>
         <p>Evidence needs and objectives (based on Section 2.4)</p>
         <p id="descr8_3_1">
-            <strong>8.3.1</strong> How are you going to evaluate whether you have achieved your aim?
+            <strong>8.3.1</strong>: How are you going to evaluate whether you have achieved your aim?
         </p>
         <textarea class="w-75" id="input8_3_1" onblur="LocalSave('8_3_1')" cols="80" rows="4"></textarea>
         <p id="descr8_3_2">
-            <strong>8.3.2</strong> Record here any evaluation data or evidence here related to this aim.
+            <strong>8.3.2</strong>: Record here any evaluation data or evidence here related to this aim.
         </p>
         <textarea class="w-75" id="input8_3_2" onblur="LocalSave('8_3_2')" cols="80" rows="4"></textarea>
     </div>
@@ -1169,6 +1296,7 @@
             <button onclick="GoToPrevious()" class="GoToPrevious">Previous</button>
             <button onclick="GoToNext()" class="GoToNext">Next</button>
             <button onclick="GoToLast()" class="GoToLast">Last</button>
+            <label class="navigationcounter"></label>
         </div>
     </div>
     <br />
